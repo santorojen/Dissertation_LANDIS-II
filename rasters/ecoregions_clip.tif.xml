@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en"><Esri><CreaDate>20220220</CreaDate><CreaTime>08521000</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files\arcgis\pro\Resources\ArcToolbox\toolboxes\Spatial Analyst Tools.tbx\ExtractByMask" Date="20220220" Time="085210">ExtractByMask ecoregions.tif studyarea_1mi F:\GMM\cliprasters\ecoregions_clip.tif</Process></lineage></DataProperties></Esri></metadata>
