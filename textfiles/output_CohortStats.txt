@@ -1,0 +1,33 @@
+LandisData  "Output Cohort Statistics"
+
+Timestep   10
+
+SpeciesAgeStats
+
+MapNames   output/cohorts/{species}-{statistic}-{timestep}.img
+
+>>MIN 	ACERSACC << minimum age for each species
+>>MAX 	ACERSACC << maximum age for each species
+>>MED		<< median age for each species
+>>SD		<< standard deviation age for each species
+>>AVG	ACERSACC	<< average age for each species
+
+
+SiteAgeStats
+
+MapNames   output/cohorts/AGE-{statistic}-{timestep}.img
+
+>>MIN 			<< minimum age across all species on site
+>>MAX			<< maximum age across all species on site
+>>MED			<< median age across all species on site
+>>AVG			<< average age across all species on site
+RICH   		<< number of age classes across all species on site - count of unique cohorts
+>>EVEN   		<< evenness 
+COUNT   		<< count of all cohorts
+
+
+SiteSpeciesStats
+
+MapNames   output/cohorts/SPP-{statistic}-{timestep}.img
+
+RICH   			<<count of species

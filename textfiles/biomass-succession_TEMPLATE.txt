@@ -1,0 +1,148 @@
+LandisData  "Biomass Succession"
+
+
+>>------------------
+>> REQUIRED INPUTS
+>>------------------
+
+Timestep  			1
+
+SeedingAlgorithm  		WardSeedDispersal
+
+InitialCommunities      	 ..\..\landis_initial_comm_data_VT-NH_v0.txt
+InitialCommunitiesMap   	 ..\..\VT-NH_init_comm_v0.tif
+
+>> CalibrateMode 		yes
+
+>> SpinUpMortalityFraction 	0.0
+
+
+
+>>----------------------------
+>> LIFE HISTORY PARAMETERS
+>>----------------------------
+
+
+
+MinRelativeBiomass	<<template has ccsm4 rcp2.6
+>> Shade	Percent Max Biomass
+>> Class	by Ecoregions
+>> ----------	--------------------	
+	1	2	3	4	5	6	7	8	9	12	14	15	16 	17	18	19	20	21	22	23	24	25	26	27	28	29	32	33	34	36	37	38	39	40	41	42	43	44	46	47
+1	1%	1%	1%	1%	1%	1%	2%	1%	1%	1%	1%	1%	1%	1%	1%	2%	1%	1%	1%	1%	1%	2%	1%	1%	2%	2%	1%	1%	2%	1%	1%	1%	1%	1%	1%	1%	1%	1%	1%	1%
+2	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%	5%
+3	7%	7%	7%	7%	7%	7%	8%	7%	7%	7%	7%	7%	7%	7%	7%	8%	7%	7%	7%	7%	7%	8%	7%	7%	8%	8%	7%	7%	8%	7%	7%	7%	7%	7%	7%	7%	7%	7%	7%	7%
+4	9%	10%	9%	9%	10%	10%	10%	9%	9%	9%	9%	9%	10%	10%	9%	10%	9%	9%	9%	9%	9%	10%	9%	10%	10%	10%	9%	10%	10%	9%	9%	9%	10%	10%	9%	9%	10%	10%	9%	9%
+5	11%	12%	12%	11%	12%	12%	12%	12%	12%	11%	11%	11%	12%	12%	11%	12%	12%	11%	11%	11%	12%	12%	11%	12%	12%	12%	11%	12%	12%	11%	11%	12%	12%	12%	11%	11%	12%	12%	11%	11%
+
+
+
+SufficientLight
+>> Spp Shade	Probability
+>> Class	by Actual Shade
+>> -----------  -----------------------------------------------
+>> Multiplied probablities by 10 for v1jrf
+>>		0	1	2	3	4	5
+	1	0.06	0.0	0.0	0.0	0.0	0.0
+	2	0.06	0.03	0.0	0.0	0.0	0.0
+	3	0.04	0.03	0.03	0.0	0.0	0.0
+	4	0.04	0.03	0.03	0.03	0.0	0.0
+	5	0.02	0.015	0.03	0.03	0.03	0.015
+
+SpeciesParameters 
+
+>> Species   Leaf	WoodyBiomass	Mortality	Growth	Leaf	
+>>	     Longevity	DecayRate	ShapeParam	Shape	Lignin%	
+>> --------  ---------	---------	----------	------	----    
+>> 	    
+ABIEBALS	4	0.1		10		0.25	0.280
+ACERPENS	1	0.1		10		0.25	0.121
+ACERRUBR   	1	0.1		10		0.25	0.183	
+ACERSACC   	1	0.1		10		0.25	0.175	
+BETUALLE   	1	0.1		10		0.25	0.219	
+BETULENT	1	0.1		10		0.25	0.219
+BETUPAPY   	1	0.1		10		0.25	0.201	
+CARYCORD	1	0.1		10		0.25	0.219
+CARYOVAT	1	0.1		10		0.25	0.219
+CASTDENT	1	0.1		10		0.25	0.219
+FAGEGRAN	1	0.1		10		0.25	0.219
+FRAXAMER	1	0.1		10		0.25	0.144	
+FRAXNIGR	1	0.1		10		0.25	0.144
+FRAXPENN	1	0.1		10		0.25	0.144
+LARILARI	1	0.1		10		0.25	0.144
+PICEABIE	4	0.1		10		0.25	0.216
+PICEGLAU	4	0.1		10		0.25	0.216
+PICEMARI	4	0.1		10		0.25	0.216
+PICERUBE	4	0.1		10		0.25	0.216
+PINURESI   	2	0.1		10		0.25	0.266	
+PINUSTRO   	3	0.1		10		0.25	0.263	
+POPUGRAN	1	0.1		10		0.25	0.256
+POPUTREM   	1	0.1		10		0.25	0.256	
+PRUNPENS	1	0.1		10		0.25	0.219
+PRUNSERO	1	0.1		10		0.25	0.219
+QUERALBA	1	0.1		10		0.25	0.219
+QUERRUBR   	1	0.1		10		0.25	0.249	
+THUJOCCI	5	0.1		10		0.25	0.206
+TILIAMER   	1	0.1		10		0.25	0.170	
+TSUGCANA	1	0.1		10		0.25	0.219
+ULMUAMER	1	0.1		10		0.25	0.121
+
+
+EcoregionParameters
+>>	AET (mm)
+0	600
+1	600
+2	600
+3	600
+4	600
+5	600
+6	600
+7	600
+8	600
+9	600
+12	600
+14	600
+15	600
+16	600
+17	600
+18	600
+19	600
+20	600
+21	600
+22	600
+23	600
+24	600
+25	600
+26	600
+27	600
+28	600
+29	600
+32	600
+33	600
+34	600
+36	600
+37	600
+38	600
+39	600
+40	600
+41	600
+42	600
+43	600
+44	600
+46	600
+47	600
+
+DynamicInputFile    			 ..\..\VT-NH_biomass_succession_dynamic_inputs_NEX_CCSM4_rcp26_Rep1.txt 
+
+FireReductionParameters
+>>	Severity	WoodLitter	Litter	
+>>	Fire		Reduct		Reduct	
+	1		0.0		0.5	
+	2		0.0		0.75	
+	3		0.0		1.0	
+	4		0.5		1.0	
+	5		0.75		1.0	
+
+HarvestReductionParameters
+>>	Name		WoodLitter	Litter	Cohort		Cohort
+>>			Reduct		Reduct	WoodRemoval	LeafRemoval

@@ -1,0 +1,43 @@
+LandisData  "Output Biomass"
+
+Timestep  5
+
+MakeTable yes  << Optional parameter
+
+Species	ABIEBALS
+	ACERPENS
+	ACERRUBR
+	ACERSACC
+	BETUALLE
+	BETULENT
+	BETUPAPY
+	CARYCORD
+	CARYOVAT
+	CASTDENT
+	FAGUGRAN
+	FRAXAMER
+	FRAXNIGR
+	FRAXPENN
+	LARILARI
+	PICEABIE
+	PICEGLAU
+	PICEMARI
+	PICERUBE
+	PINURESI
+	PINUSTRO
+	POPUGRAN
+	POPUTREM
+	PRUNPENS
+	PRUNSERO
+	QUERALBA
+	QUERRUBR
+	THUJOCCI
+	TILIAMER
+	TSUGCANA
+	ULMUAMER
+
+MapNames  outputs/biomass/biomass-{species}-{timestep}.tif
+
+DeadPools both
+	  
+MapNames  outputs/biomass/biomass-{pool}-{timestep}.tif
